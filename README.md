@@ -2,13 +2,11 @@
 
 Starter template for a [Holochain](https://developer.holochain.org) + [Stencil](https://stenciljs.com) app
 
-Resources
-
 ## Environment Setup
 
 > PREREQUISITE: set up the [holochain development environment](https://developer.holochain.org/docs/install/).
 
-**Note: this repository uses Holochain V2. To use a different version, see [here](https://developer.holochain.org/get-started/upgrade-holochain/) **.
+**Note:** _this repository uses Holochain V2. To use a different version, see [here](https://developer.holochain.org/get-started/upgrade-holochain/)_\*\*.
 
 Enter the nix shell by running this in the root folder of the repository:
 
@@ -16,7 +14,7 @@ Enter the nix shell by running this in the root folder of the repository:
 nix develop
 ```
 
-**Run all the other instructions in this README from inside this nix-shell, otherwise they won't work**.
+**Note:** _Run all the other instructions in this README from inside this nix-shell, otherwise they won't work_.
 
 Install project dependencies for all workspaces
 
@@ -24,11 +22,11 @@ Install project dependencies for all workspaces
 npm install
 ```
 
-**Note: For the app to run, you'll have to have at least one Holochain DNA with corresponding integrity and coordinator zome pairs. The holochain scaffold tool can be used to create them.**
+**Note:** _For the app to run, you'll have to have at least one Holochain DNA with corresponding integrity and coordinator zome pairs. The holochain scaffold tool can be used to create them._
 
 ## Holochain scaffold commands
 
-**Note: The scaffold tool may ask you to choose a UI framework. Currently, none exist for Stencil so you may simply delete the generated components and develop your own.**
+**Note:** _The scaffold tool may ask you to choose a UI framework. Currently, none exist for Stencil so you may simply delete the generated components and develop your own._
 
 ### Scaffold DNA
 
