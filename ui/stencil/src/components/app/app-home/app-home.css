@@ -1,0 +1,128 @@
+:root {
+}
+
+.chl-searchbar-container {
+  @apply flex flex-row w-full top-14 z-10 content-center justify-items-center;
+}
+
+ion-searchbar {
+  width: 100% !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  --background: none !important;
+}
+
+.searchbar-input-container {
+  border-bottom: 1px dotted black !important;
+}
+
+.space-card {
+  @apply cursor-pointer hover:bg-chl-platinum hover:border-black bg-white border-chl-timberwolf border drop-shadow relative duration-150 rounded font-mono font-light;
+
+  padding-bottom: 56%;
+}
+
+.space-card.no-bg {
+  background: unset;
+}
+
+.space-card--inner {
+  @apply absolute left-0 top-0 right-0 bottom-0 p-5 flex flex-col justify-between;
+}
+
+.card-title {
+  @apply font-editor text-lg font-medium mb-3;
+}
+
+.card-summary,
+.card-edited {
+  @apply text-4xs;
+}
+
+.title-secondary {
+  @apply mt-20 font-bold text-lg font-mono mb-12;
+}
+
+.chl-home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: none;
+  margin-top: 100px;
+}
+
+.card-grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.card-grid {
+  @apply grid grid-cols-3 gap-8 w-full;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+}
+
+.card-grid a {
+  text-decoration: none;
+}
+
+.card-grid .chl-content-card {
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+
+.searchbar-input {
+  --box-shadow: none !important;
+  text-align: center;
+}
+
+.content-with-searchbar {
+  padding-top: 55px;
+}
+
+.hero-container {
+  @apply flex items-center flex-col px-2 lg:px-3 w-full;
+}
+
+.hero-container__imagebox {
+  @apply w-full h-72 bg-[#313131] flex items-center content-center;
+}
+
+.hero-container__namebox {
+  @apply bg-white border-[#313131] border rounded flex -mt-6 w-full lg:max-w-[900px] p-8 justify-center text-8xl;
+}
+
+.org-container {
+  @apply flex flex-col w-full max-w-6xl px-4;
+}
+
+.org-info-header {
+  @apply flex flex-row justify-between items-center py-4 border-b border-chl-timberwolf mb-24 mt-12;
+}
+.org-name {
+  @apply flex flex-row w-full font-editor font-normal text-8xl;
+}
+
+.listening-model-container {
+  margin-top: 1em;
+}
+
+.listening-model-container .chl-tag {
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chl-tag--inner a {
+  text-decoration: none;
+  color: black;
+}
+
+.tag-spaced {
+  margin-bottom: 9px;
+}

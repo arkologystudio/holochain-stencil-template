@@ -1,0 +1,7 @@
+---
+manifest_version: "1"
+name: holochain-stencil-template
+ui:
+  bundled: "../ui/dist.zip"
+happ_manifest:
+  bundled: "./holochain-stencil-template.happ"
