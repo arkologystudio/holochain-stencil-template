@@ -95,3 +95,4 @@ This repository is using these tools:
 - [@holochain/client](https://www.npmjs.com/package/@holochain/client): client library to connect to Holochain from the UI.
 - [@holochain-playground/cli](https://www.npmjs.com/package/@holochain-playground/cli): introspection tooling to understand what's going on in the
 - [@stencil/core](https://www.npmjs.com/package/@stencil/core): web component compiler for creating client components
+- [@ionic/core](https://www.npmjs.com/package/@ionic/core): web component UI library
