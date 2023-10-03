@@ -1,6 +1,6 @@
 import { Component, State, h } from '@stencil/core';
 import { AppAgentWebsocket, AppAgentCallZomeRequest, AgentPubKey } from '@holochain/client';
-import { HelloWorld } from '../../../types/entryTypes';
+import { HelloWorld } from '../../../../../types/entryTypes';
 import store from '../../../store/store';
 
 @Component({

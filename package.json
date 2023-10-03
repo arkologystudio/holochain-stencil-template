@@ -5,7 +5,8 @@
     "ui",
     "tests",
     "ui/vite",
-    "ui/stencil"
+    "ui/stencil",
+    "workdir"
   ],
   "scripts": {
     "start": "AGENTS=2 npm run network",

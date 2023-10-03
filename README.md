@@ -8,6 +8,8 @@ Resources
 
 > PREREQUISITE: set up the [holochain development environment](https://developer.holochain.org/docs/install/).
 
+**Note: this repository uses Holochain V2. To use a different version, see [here](https://developer.holochain.org/get-started/upgrade-holochain/) **.
+
 Enter the nix shell by running this in the root folder of the repository:
 
 ```bash
