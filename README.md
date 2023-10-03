@@ -1,5 +1,9 @@
 # Holochain Stencil Template
 
+Starter template for a [Holochain](https://developer.holochain.org) + [Stencil](https://stenciljs.com) app
+
+Resources
+
 ## Environment Setup
 
 > PREREQUISITE: set up the [holochain development environment](https://developer.holochain.org/docs/install/).
