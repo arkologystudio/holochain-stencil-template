@@ -1,6 +1,6 @@
 import { assert, test } from "vitest";
 
-import { runScenario, pause, CallableCell } from "@holochain/tryorama";
+import { runScenario, pause, CallableCell, dhtSync } from "@holochain/tryorama";
 import {
   NewEntryAction,
   ActionHash,
@@ -19,15 +19,12 @@ test("Post a hello and attempt to retrive them.", async () => {
   await runScenario(async (scenario) => {
     // Construct proper paths for your app.
     // This assumes app bundle created by the `hc app pack` command.
-    // const testAppPath =
-    //   process.cwd() + "/../workdir/holochain-stencil-template.happ";
+
     const app_path: string = path.resolve(
       __dirname,
       "../../../..",
       "workdir/holochain-stencil-template.happ"
     );
-
-    console.log("testAppPath: ", app_path);
 
     // Set up the app to be installed
     const appSource = { appBundleSource: { path: app_path } };
@@ -45,7 +42,6 @@ test("Post a hello and attempt to retrive them.", async () => {
     await scenario.shareAllAgents();
 
     // Bob gets all hellos
-    console.log("Bob getting hellos...");
     let hellos: HelloWorld[] = await bob.cells[0].callZome({
       zome_name: "hello",
       fn_name: "get_all_hellos",
@@ -54,7 +50,6 @@ test("Post a hello and attempt to retrive them.", async () => {
     assert.equal(hellos.length, 0);
 
     // Alice creates a HelloWorld
-    console.log("Alice posting a hello..");
     const payload: HelloWorld = {
       content: "Hello, world!",
       author: alice.agentPubKey,
@@ -67,10 +62,9 @@ test("Post a hello and attempt to retrive them.", async () => {
     });
     assert.ok(createdRecord);
 
-    await pause(1200);
+    await dhtSync([alice, bob], alice.cells[0].cell_id[0]);
 
     // Bob gets all hellos again
-    console.log("Bob getting hellos again...");
     hellos = await bob.cells[0].callZome({
       zome_name: "hello",
       fn_name: "get_all_hellos",
