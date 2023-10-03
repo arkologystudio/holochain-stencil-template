@@ -10,8 +10,6 @@ export namespace Components {
     }
     interface AppRoot {
     }
-    interface LoadingSpinner {
-    }
 }
 declare global {
     interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {
@@ -26,16 +24,9 @@ declare global {
         prototype: HTMLAppRootElement;
         new (): HTMLAppRootElement;
     };
-    interface HTMLLoadingSpinnerElement extends Components.LoadingSpinner, HTMLStencilElement {
-    }
-    var HTMLLoadingSpinnerElement: {
-        prototype: HTMLLoadingSpinnerElement;
-        new (): HTMLLoadingSpinnerElement;
-    };
     interface HTMLElementTagNameMap {
         "app-home": HTMLAppHomeElement;
         "app-root": HTMLAppRootElement;
-        "loading-spinner": HTMLLoadingSpinnerElement;
     }
 }
 declare namespace LocalJSX {
@@ -43,12 +34,9 @@ declare namespace LocalJSX {
     }
     interface AppRoot {
     }
-    interface LoadingSpinner {
-    }
     interface IntrinsicElements {
         "app-home": AppHome;
         "app-root": AppRoot;
-        "loading-spinner": LoadingSpinner;
     }
 }
 export { LocalJSX as JSX };
@@ -57,7 +45,6 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "app-home": LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
-            "loading-spinner": LocalJSX.LoadingSpinner & JSXBase.HTMLAttributes<HTMLLoadingSpinnerElement>;
         }
     }
 }

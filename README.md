@@ -18,7 +18,7 @@ Install project dependencies for all workspaces
 npm install
 ```
 
-**Note: For the app to run, you'll have to have at least one Holochain DNA with corresponding integrity and coordinator zome pairs. It is suggested you use the hc scaffold tool to initialise these.**
+**Note: For the app to run, you'll have to have at least one Holochain DNA with corresponding integrity and coordinator zome pairs. The holochain scaffold tool can be used to create them.**
 
 ## Holochain scaffold commands
 

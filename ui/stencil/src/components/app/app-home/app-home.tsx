@@ -51,7 +51,6 @@ export class AppHome {
     }
   };
 
-  // Takes a Uint8Array and returns a formatted string of only the first and last 4 characters
   keyToString = (key: AgentPubKey) => {
     const keyString = key.toString();
     return `${keyString.slice(0, 7)} (...) ${keyString.slice(keyString.length - 7, keyString.length)}`;
