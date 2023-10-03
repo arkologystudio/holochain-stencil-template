@@ -6,7 +6,7 @@ Starter template for a [Holochain](https://developer.holochain.org) + [Stencil](
 
 > PREREQUISITE: set up the [holochain development environment](https://developer.holochain.org/docs/install/).
 
-**Note:** _this repository uses Holochain V2. To use a different version, see [here](https://developer.holochain.org/get-started/upgrade-holochain/)_\*\*.
+**Note:** _this repository uses Holochain V2. To use a different version, see the [HC upgrade guide](https://developer.holochain.org/get-started/upgrade-holochain/)_
 
 Enter the nix shell by running this in the root folder of the repository:
 
@@ -14,15 +14,15 @@ Enter the nix shell by running this in the root folder of the repository:
 nix develop
 ```
 
-**Note:** _Run all the other instructions in this README from inside this nix-shell, otherwise they won't work_.
+**Note:** _Run all the other instructions in this README from inside this nix-shell_.
 
-Install project dependencies for all workspaces
+Install project dependencies across all workspaces/sub-directories
 
 ```bash
 npm install
 ```
 
-**Note:** _For the app to run, you'll have to have at least one Holochain DNA with corresponding integrity and coordinator zome pairs. The holochain scaffold tool can be used to create them._
+**Note:** _For the app to run, you'll have to have at least one Holochain DNA with corresponding integrity and coordinator zome pairs. The holochain scaffold tool can be used to create them (see below). This template comes with a basic HelloWorld DNA and Zomes for reference._
 
 ## Holochain scaffold commands
 
