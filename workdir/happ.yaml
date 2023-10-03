@@ -2,4 +2,18 @@
 manifest_version: "1"
 name: holochain-stencil-template
 description: ~
-roles: []
+roles:
+  - name: hello_world
+    provisioning:
+      strategy: create
+      deferred: false
+    dna:
+      bundled: "../dnas/hello_world/workdir/hello_world.dna"
+      modifiers:
+        network_seed: ~
+        properties: ~
+        origin_time: ~
+        quantum_time: ~
+      installed_hash: ~
+      _version: ~
+      clone_limit: 0

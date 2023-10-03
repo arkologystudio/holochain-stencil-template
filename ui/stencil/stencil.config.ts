@@ -4,6 +4,8 @@ import nodePolyfills from 'rollup-plugin-node-polyfills';
 
 export const config: Config = {
   namespace: 'stencil-components',
+  globalScript: 'src/global/app.ts',
+  globalStyle: 'src/global/app.css',
   outputTargets: [
     {
       type: 'dist',
@@ -12,10 +14,6 @@ export const config: Config = {
     {
       type: 'docs-readme',
     },
-    // {
-    //   type: 'www',
-    //   serviceWorker: null, // disable service workers
-    // },
   ],
   testing: {
     browserHeadless: 'new',

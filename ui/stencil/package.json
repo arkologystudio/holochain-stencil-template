@@ -19,9 +19,9 @@
     "loader/"
   ],
   "scripts": {
-    "start-watch": "stencil build --watch",
+    "start": "stencil build --watch",
     "build": "stencil build --docs",
-    "start": "stencil build --dev --watch --serve",
+    "start-dev": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate"
@@ -30,7 +30,8 @@
     "@stencil/core": "^4.0.0",
     "stencil-router-v2": "^0.6.0",
     "@holochain/client": "^0.16.2",
-    "@ionic/core": "^7.4.2"
+    "@ionic/core": "^7.4.2",
+    "@stencil/store": "2.0.10"
   },
   "devDependencies": {
     "@types/jest": "^27.5.2",
