@@ -22,6 +22,8 @@ npm install
 
 ## Holochain scaffold commands
 
+**Note: The scaffold tool may ask you to choose a UI framework. Currently, none exist for Stencil so you may simply delete the generated components and develop your own.**
+
 ### Scaffold DNA
 
 ```bash
