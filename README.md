@@ -18,7 +18,7 @@ Install project dependencies for all workspaces
 npm install
 ```
 
-\*\* For the app to run, you'll have to have at least one Holochain DNA.
+**For the app to run, you'll have to have at least one Holochain DNA.**
 
 ## Holochain scaffold commands
 
@@ -28,17 +28,19 @@ npm install
 hc scaffold dna
 ```
 
-### Scaffold Zome
-
 ```bash
 hc scaffold zome
 ```
 
-### Scaffold Entry Type
-
 ```bash
 hc scaffold entry-type
 ```
+
+```bash
+hc scaffold collection
+```
+
+... etc
 
 ## Running 2 agents
 
