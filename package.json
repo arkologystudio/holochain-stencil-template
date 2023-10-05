@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "start": "AGENTS=2 npm run network",
+    "build-ui": "npm run build -w ui/stencil",
     "network": "hc s clean && npm run build:happ && UI_PORT=8888 concurrently \"npm start -w ui/stencil\" \"npm start -w ui/vite\" \"npm run launch:happ\" \"holochain-playground\"",
     "test": "npm run build:zomes && hc app pack workdir --recursive && npm t -w tests",
     "launch:happ": "echo \"pass\" | RUST_LOG=warn hc launch --piped -n $AGENTS workdir/holochain-stencil-template.happ --ui-port $UI_PORT network mdns",
