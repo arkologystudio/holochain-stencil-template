@@ -6,7 +6,7 @@ Starter template for a [Holochain](https://developer.holochain.org) + [Stencil](
 
 > PREREQUISITE: set up the [holochain development environment](https://developer.holochain.org/docs/install/).
 
-**Note:** _this repository uses Holochain V2. To use a different version, see the [HC upgrade guide](https://developer.holochain.org/get-started/upgrade-holochain/)_
+**Note:** _this repository uses Holochain V1. To upgrade, see the [HC upgrade guide](https://developer.holochain.org/get-started/upgrade-holochain/)_
 
 Enter the nix shell by running this in the root folder of the repository:
 
