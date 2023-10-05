@@ -1,6 +1,6 @@
 import { Component, State, h } from '@stencil/core';
 import { AppAgentWebsocket, AppAgentCallZomeRequest, AgentPubKey } from '@holochain/client';
-import { HelloWorld } from '../../../../../types/entryTypes';
+import { HelloWorld } from '../../../../types/entryTypes';
 import store from '../../../store/store';
 
 @Component({
@@ -62,10 +62,12 @@ export class AppHome {
         <h1>Holochain Stencil Template</h1>
         <p>with &lt;3 from Arkology Studio</p>
         <br />
+        <br />
         <div>
           <ion-button shape="round" fill="outline" onClick={this.sayHello}>
             Say Hello
           </ion-button>
+          <br />
           <br />
           <p>Who's said hello:</p>
           <ion-list className="list">

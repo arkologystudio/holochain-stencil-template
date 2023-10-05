@@ -19,10 +19,11 @@ ion-button {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0;
   margin-top: 20px;
-  border-radius: 2ch;
+  border-radius: 1ch;
 }
 
 .list-item {
+  font-size: 13px;
   --inner-border-width: 0;
   --inner-padding-end: 16px;
   --inner-padding-start: 16px;

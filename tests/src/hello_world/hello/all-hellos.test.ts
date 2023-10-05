@@ -13,7 +13,7 @@ import {
 import { decode } from "@msgpack/msgpack";
 const path = require("path");
 
-import { HelloWorld } from "../../../../ui/types/entryTypes";
+import { HelloWorld } from "../../../../ui/stencil/types/entryTypes";
 
 test("Post a hello and attempt to retrive them.", async () => {
   await runScenario(async (scenario) => {

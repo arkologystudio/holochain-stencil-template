@@ -24,7 +24,7 @@ export class AppRoot {
 
   render() {
     return (
-      <div>
+      <div class="app-root">
         <main>
           <Router.Switch>
             <Route path={match(`/`, options)}>{!this.loading && this.client ? <app-home /> : <ion-spinner name="dots"></ion-spinner>}</Route>
