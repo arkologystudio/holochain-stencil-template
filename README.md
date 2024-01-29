@@ -2,6 +2,8 @@
 
 Starter template for a [Holochain](https://developer.holochain.org) + [Stencil](https://stenciljs.com) app
 
+N.B Network config needs updating for HC 0.2.4
+
 ## Environment Setup
 
 > PREREQUISITE: set up the [holochain development environment](https://developer.holochain.org/docs/install/).
